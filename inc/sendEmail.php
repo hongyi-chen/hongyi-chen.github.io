@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 $siteOwnersEmail = 'hongyigma@gmail.com';
 
