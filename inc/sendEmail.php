@@ -1,7 +1,8 @@
 <?php
 
 $siteOwnersEmail = 'hongyigma@gmail.com';
-
+$error = “”;
+$message = “”;
 
 if($_POST) {
 
