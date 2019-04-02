@@ -69,7 +69,7 @@ html, body {
 
 body {
     background: #111111;
-    font-family: "lora-regular", serif;
+    font-family: "montserrat-light", sans-serif;
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
@@ -2787,7 +2787,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials p {
-    font-family: "lora-regular", serif;
+    font-family: "lora-regular";
     font-size: 3rem;
     line-height: 1.8;
     color: #555555;
