@@ -15,6 +15,7 @@
     doc.setAttribute('data-useragent', navigator.userAgent);
 
 
+    
    /* Preloader
     * -------------------------------------------------- */
     var clPreloader = function() {
@@ -39,6 +40,7 @@
         });
     };
 
+    
 
    /* Menu on Scrolldown
     * ------------------------------------------------------ */

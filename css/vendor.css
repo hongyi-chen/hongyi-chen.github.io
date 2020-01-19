@@ -1595,6 +1595,7 @@ a.pswp__share--facebook:before {
 }
 
 
+/* 
 /* -------------------------------------------------------------------
  * ## 5. Loading indicator (preloader)
  * You can play with it here - http://codepen.io/dimsemenov/pen/yyBWoR
@@ -1741,7 +1742,9 @@ a.pswp__share--facebook:before {
         -webkit-transform: rotate(0);
         transform: rotate(0);
     }
-}
+} 
+
+*/
 
 
 /* -------------------------------------------------------------------
