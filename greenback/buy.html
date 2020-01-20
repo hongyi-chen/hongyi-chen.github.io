@@ -1,0 +1,154 @@
+	<!doctype html5>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		<meta name='theme-color' content='#5fac60'/>
+		<link rel='stylesheet' href='css/w3.css'/>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'/>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400'/>
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.6/css/all.css'/>
+		<link rel='stylesheet' href='css/styles.css'/>
+		<link rel='icon' href='img/logo.png'/>
+		<title>Greenback - Order A Wallet</title>
+	</head>
+	<body onload="myFunction()">
+		<div id="loader" class="w3-display-middle"></div>
+		<div id="mainContent" style="display: none" class="w3-animate-opacity">
+		<div class="w3-display-container w3-top navbar w3-card w3-white" id="myNavbar">
+			<div class="w3-hide-small">
+				<div class="w3-left">
+					<a class="logo" href="index.html"><strong>green</strong>back</a>
+				</div>
+				<div class="w3-right">
+					<a class="navLink" href="about.html">about</a>
+					<a class="navLink" href="wallet.html">wallet</a>
+					<a class="navLink" href="contact.html">contact</a>
+				</div>
+			</div>
+			<div class="w3-hide-large w3-hide-medium w3-display-container" style="height:20px">
+				<div class="w3-display-left">
+					<a class="menu" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></i></a>
+				</div>
+				<div class="w3-display-middle">
+					<a class="logo" href="index.html"><strong>green</strong>back</a>
+				</div>
+			</div>
+		</div>
+		<div id="sidenav" class="sidenav w3-card-4">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html" class="sidenavbtn" onclick="closeNav()">home</a>
+			<a href="about.html" class="sidenavbtn" onclick="closeNav()">about</a>
+			<a href="wallet.html" class="sidenavbtn" onclick="closeNav()">wallet</a>
+			<a href="contact.html" class="sidenavbtn" onclick="closeNav()">contact</a>
+		</div>
+		<div style="margin-top: 64px" class="w3-padding-32 section w3-center" onclick="closeNav()">
+			<h1 class="header2"></h1>
+			<br>
+			<div class="formWrap">
+				<form action="order.php" method="post">
+					<fieldset>
+						<p class="text">Personal Information</p>
+						<br>
+						<input name="name" placeholder="name" required/>
+						<br><br>
+						<input name="email" placeholder="email" required/>
+						<br><br>
+						<input name="phone-number" placeholder="phone number" required/>
+						<br><br><br>
+						<p class="text">Order Information</p>
+						<br>
+						<div class="subtext">
+							<span>Quantity: </span>
+							<select name="$quantity" class="quantitySelection" style="margin-left: 10px; padding: 5px">
+								<option value="1">One ($25)</option>
+								<option value="2">Two ($50)</option>
+								<option value="3">Three ($75)</option>
+								<option value="4">Four ($100)</option>
+								<option value="5">Five ($125)</option>
+							</select>
+						</div>
+						<br><br>
+						<input name="promo-code" placeholder="promo code" style="text-transform: uppercase"/>
+						<br><br>
+						<textarea name="address" placeholder="address" required></textarea>
+						<br><br><br>
+							<div style="text-align: left" class="subtext">
+							<input type="radio" name="shippingMethod" id="standard" value="Standard" checked style="width: auto"/>
+							Standard Shipping ($5.00)<br><br>
+							<input type="radio" name="shippingMethod" value="Pickup" style="width: auto"/> Arranged Pickup (FREE)
+						</div>
+						<Br><br><br>
+						<p class="text">QR Code Functionality</p>
+						<p class="subtext">Link your profiles and we'll set up your digital business card</p>
+						<br>
+						<input name="facebook" placeholder="facebook (link profile)"/>
+						<br><br>
+						<input name="linkedin" placeholder="linkedin (link profile)"/>
+						<br><br>
+						<input name="instagram" placeholder="instagram (handle)"/>
+						<br><br>
+						<input name="twitter" placeholder="twitter (handle)"/>
+						<br><br>
+						<input name="snapchat" placeholder="snapchat (username)"/>
+						<br><br>
+						<input name="wechat" placeholder="wechat (username)"/>
+						<br><br>
+						<input name="website" placeholder="personal website"/>
+						<br><br>
+					</fieldset>
+					<fieldset>
+						<input class="CTA CTAtext" type="submit" value="PLACE ORDER" name="submit" required/>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="footer w3-padding-32 w3-center" onclick="closeNav()">
+			<div>
+				<a class="SMLinks" href="https://www.facebook.com/greenbackco"><i class="fab fa-facebook-f"></i></a>
+				<a class="SMLinks" href="https://www.instagram.com/greenback.co/"><i class="fab fa-instagram"></i></a>
+			</div>
+			<br><br>
+			<div>
+				<p class="text">&copy Greenback 2018</p>
+			</div>
+		</div>
+	</div>
+		<!--SMOOTH SCROLLING-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+				window.location.hash = hash;
+			  });
+			}
+		  });
+		});
+
+		function openNav() {
+		    document.getElementById("sidenav").style.width = "250px";
+		}
+									
+		function closeNav() {
+		    document.getElementById("sidenav").style.width = "0";
+		}
+
+		var myVar;
+
+		function myFunction() {
+		    myVar = setTimeout(showPage, 1000);
+		}
+
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("mainContent").style.display = "block";
+		}
+		</script>
+	</body>
+</html>

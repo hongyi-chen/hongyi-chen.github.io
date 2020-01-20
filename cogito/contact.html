@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<title>Contact Us | Cogito Apparel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Cogito Apparel is a youth-run junior achievement company, dedicated on empowering youth. Through defining oneself, one can grow into something greater. Our clothing brand creates high quality attire while incorporating elegant designs. Our line of hoodies provides an opportunity for privileged youth to make a difference in their community and empower those in need. Through unity, youth can change our community..">
+<meta name="keywords" content="Cogito, Apparel, Cogito Apparel, Junior Achievement, Locally produced, Clothing, Hoodies, Cogito Ergo Sum, Toronto, Markham, Richmond Hill, Youth, Teenagers">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="img/logo.png"/>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/background.jpg);
+    min-height: 100%;
+}
+.w3-navbar li a {
+    padding: 16px;
+    float: left;
+}
+</style>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-card-2" id="myNavbar">
+    <li>
+     <span><a href="index.html" class="w3-wide w3-hide-small w3-margin-left logo"><img src="img/logo.png" height="23px" style = "margin-right:10px"/>COGITO APPAREL</a><span>
+	  <span><a href="index.html" class="w3-wide w3-hide-large w3-hide-medium w3-small logo logoSmall">COGITO APPAREL</a><span>
+    </li>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-hide-medium w3-wide w3-margin-right navbarLink">
+	  <li><a href="about.html">ABOUT</a></li>
+      <li class="w3-dropdown-hover">
+      <a href="products.html">PRODUCTS</a>
+      <div class="w3-dropdown-content w3-white w3-card-4">
+        <a href="newborn.html">Newborn</a>
+		<a href="rebirth.html">Rebirth</a>
+        <!--<a href="crewnecks.html">Crewnecks</a>
+        <a href="hats.html">Hats</a>-->
+      </div>
+    </li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <li>
+      <a href="javascript:void(0)" class="w3-right w3-hide-large menuIcon" onclick="w3_open()">
+        <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-large" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close</a>
+  <a href="index.html" onclick="w3_close()">HOME</a> 
+  <a href="about.html" onclick="w3_close()">ABOUT</a>
+  <div class="w3-accordion">
+	<a onclick="myAccFunc()" href="javascript:void(0)" class="w3-text-white" id="myBtn">PRODUCTS <i class="fa fa-caret-down w3-margin-right"></i></a>
+	<div id="demoAcc" class="w3-accordion-content w3-padding-large w3-medium">
+	   <a href="products.html">Main</a>
+	   <a href="newborn.html">Newborn</a>
+		<a href="rebirth.html">Rebirth</a>
+	   <!--<a href="crewnecks.html">Crewnecks</a>
+	   <a href="hats.html">Hats</a>-->
+	</div>
+  </div>
+  <a href="contact.html" onclick="w3_close()">CONTACT</a>
+</nav> 
+
+<div class="w3-padding-64 w3-container">
+  <h2 class="w3-center w3-xxlarge w3-hide-small w3-hide-medium">CONTACT US</h2>
+  <h2 class="w3-center w3-xlarge w3-hide-large w3-hide-small">CONTACT US</h2>
+  <h2 class="w3-center w3-large w3-hide-large w3-hide-medium">CONTACT US</h2>
+  <div class="w3-half">
+	<h3 class="w3-center w3-xlarge w3-hide-small w3-hide-medium">Leave us a message</h3>
+	<h3 class="w3-center w3-large w3-hide-large w3-hide-small">Leave us a message</h2>
+	<h3 class="w3-center w3-medium w3-hide-large w3-hide-medium">Leave us a message</h3>
+	<p class=" w3-large w3-hide-small w3-hide-medium"><i class="fa fa-envelope w3-padding-right w3-margin-left"></i>cogitoapparel@gmail.com</p>
+	<p class=" w3-medium w3-hide-small w3-hide-large"><i class="fa fa-envelope w3-padding-right w3-margin-left"></i>cogitoapparel@gmail.com</p>
+	<p class=" w3-small w3-hide-large w3-hide-medium"><i class="fa fa-envelope w3-padding-right w3-margin-left"></i>cogitoapparel@gmail.com</p>
+	<a class="typeform-share smallButton w3-margin-left w3-hide-large w3-hide-medium w3-small" href="https://forrestfan.typeform.com/to/AFDoZu" data-mode="1" target="_blank">Send Us An Email</a>
+	<br>
+	<a class="typeform-share w3-btn w3-margin-left w3-hide-small" href="https://forrestfan.typeform.com/to/AFDoZu" data-mode="1" target="_blank">Send Us An Email</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+   <br>
+   <br>
+   </div>
+   <div class="w3-half w3-container">
+    <h3 class="w3-center w3-xlarge w3-hide-small w3-hide-medium">Connect with us</h3>
+	<h3 class="w3-center w3-large w3-hide-small w3-hide-large">Connect with us</h3>
+	<h3 class="w3-center w3-medium w3-hide-large w3-hide-medium">Connect with us</h3>
+	<a href="https://www.facebook.com/cogitoapparel" class="contactLink w3-hide-small w3-hide-medium" target = "_blank"><p class=" w3-large"><i class="fa fa-facebook-square w3-padding-right w3-margin-left"></i>Facebook</p></a>
+	<a href="https://www.facebook.com/cogitoapparel" class="contactLink w3-hide-small w3-hide-large" target = "_blank"><p class=" w3-medium"><i class="fa fa-facebook-square w3-padding-right w3-margin-left"></i>Facebook</p></a>
+	<a href="https://www.facebook.com/cogitoapparel" class="contactLink w3-hide-large w3-hide-medium" target = "_blank"><p class=" w3-small"><i class="fa fa-facebook-square w3-padding-right w3-margin-left"></i>Facebook</p></a>
+	<a href="https://www.instagram.com/cogitoapparel" class="contactLink w3-hide-small w3-hide-medium" target = "_blank"><p class=" w3-large"><i class="fa fa-instagram w3-padding-right w3-margin-left"></i>Instagram</p></a>
+	<a href="https://www.instagram.com/cogitoapparel" class="contactLink w3-hide-small w3-hide-large" target = "_blank"><p class=" w3-medium"><i class="fa fa-instagram w3-padding-right w3-margin-left"></i>Instagram</p></a>
+	<a href="https://www.instagram.com/cogitoapparel" class="contactLink w3-hide-large w3-hide-medium" target = "_blank"><p class=" w3-small"><i class="fa fa-instagram w3-padding-right w3-margin-left"></i>Instagram</p></a>
+   </div>
+</div>
+<div class="w3-container w3-padding-64 w3-margin-left w3-margin-right">
+	<h3 class="w3-center w3-xlarge w3-hide-small w3-hide-medium">School Representatives</h3>
+	<h3 class="w3-center w3-large w3-hide-small w3-hide-large">School Representatives</h3>
+	<h3 class="w3-center w3-medium w3-hide-large w3-hide-medium">School Representatives</h3>
+	<p class=" w3-medium w3-hide-small w3-hide-medium w3-center">If you attend any of the following schools, feel free to get in touch with your school representative</p>
+	<p class=" w3-small w3-hide-small w3-hide-large w3-center">If you attend any of the following schools, feel free to get in touch with your school representative</p>
+	<p class=" w3-tiny w3-hide-large w3-hide-medium w3-center">If you attend any of the following schools, feel free to get in touch with your school representative</p>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="w3-large w3-hide-small w3-hide-medium">Bayview SS</h4></strong>
+		<strong><h4 class="w3-medium w3-hide-small w3-hide-large">Bayview SS</h4></strong>
+		<strong><h4 class="w3-small w3-hide-large w3-hide-medium">Bayview SS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Varun Mokashi</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Varun Mokashi</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Varun Mokashi</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">vmokashi2001@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">vmokashi2001@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">vmokashi2001@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="w3-large w3-hide-small w3-hide-medium">St. Robert CHS</h4></strong>
+		<strong><h4 class="w3-medium w3-hide-small w3-hide-large">St. Robert CHS</h4></strong>
+		<strong><h4 class="w3-small w3-hide-large w3-hide-medium">St. Robert CHS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Hong Yi Chen</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Hong Yi Chen</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Hong Yi Chen</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">hongyigma@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">hongyigma@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">hongyigma@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="w3-large w3-hide-small w3-hide-medium">Richmond Hill HS</h4></strong>
+		<strong><h4 class="w3-medium w3-hide-small w3-hide-large">Richmond Hill HS</h4></strong>
+		<strong><h4 class="w3-small w3-hide-large w3-hide-medium">Richmond Hill HS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Stephan Kim</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Stephan Kim</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Stephan Kim</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">stephan.kim911@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">stephan.kim911@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">stephan.kim911@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="w3-large w3-hide-small w3-hide-medium">Thornlea SS</h4></strong>
+		<strong><h4 class="w3-medium w3-hide-small w3-hide-large">Thornlea SS</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">Thornlea SS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Darien Hong</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Darien Hong</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Darien Hong</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">darienlakes@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">darienlakes@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">darienlakes@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="  w3-large w3-hide-small w3-hide-medium">Marc Garneau CI</h4></strong>
+		<strong><h4 class="  w3-medium w3-hide-small w3-hide-large">Marc Garneau CI</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">Marc Garneau CI</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Helen Chen</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Helen Chen</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Helen Chen</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">helen.chen358@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">helen.chen358@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">helen.chen358@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="  w3-large w3-hide-small w3-hide-medium">York Mills CI</h4></strong>
+		<strong><h4 class="  w3-medium w3-hide-small w3-hide-large">York Mills CI</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">York Mills CI</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Jingyan Li</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Jingyan Li</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Jingyan Li</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">jingyankli@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">jingyankli@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">jingyankli@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="  w3-large w3-hide-small w3-hide-medium">Unionville HS</h4></strong>
+		<strong><h4 class="  w3-medium w3-hide-small w3-hide-large">Unionville HS</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">Unionville HS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Rachael Ng</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Rachael Ng</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Rachael Ng</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">rachael.sun.ng@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">rachael.sun.ng@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">rachael.sun.ng@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="  w3-large w3-hide-small w3-hide-medium">St. Augustine CHS</h4></strong>
+		<strong><h4 class="  w3-medium w3-hide-small w3-hide-large">St. Augustine CHS</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">St. Augustine CHS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Renee Yan</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Renee Yan</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Renee Yan</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">reneeyanlw@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">reneeyanlw@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">reneeyanlw@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="  w3-large w3-hide-small w3-hide-medium">Bill Crothers SS</h4></strong>
+		<strong><h4 class="  w3-medium w3-hide-small w3-hide-large">Bill Crothers SS</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">Bill Crothers SS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Georgia Pappas</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Georgia Pappas</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Georgia Pappas</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">georgiapappas7@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">georgiapappas7@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">georgiapappas7@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="  w3-large w3-hide-small w3-hide-medium">Newmarket HS</h4></strong>
+		<strong><h4 class="  w3-medium w3-hide-small w3-hide-large">Newmarket HS</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">Newmarket HS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">David Fan</p>
+		<p class="w3-small w3-hide-small w3-hide-large">David Fan</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">David Fan</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">david2012df@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">david2012df@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">david2012df@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="  w3-large w3-hide-small w3-hide-medium">Richmond Green SS</h4></strong>
+		<strong><h4 class="  w3-medium w3-hide-small w3-hide-large">Richmond Green SS</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">Richmond Green SS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Joseph Wang</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Joseph Wang</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Joseph Wang</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">ultihex@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">ultihex@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">ultihex@gmail.com</p>
+	</div>
+	<div class="w3-container w3-padding-16 w3-third">
+		<strong><h4 class="  w3-large w3-hide-small w3-hide-medium">Earl Haig SS</h4></strong>
+		<strong><h4 class="  w3-medium w3-hide-small w3-hide-large">Earl Haig SS</h4></strong>
+		<strong><h4 class="  w3-small w3-hide-large w3-hide-medium">Earl Haig SS</h4></strong>
+		<p class="w3-medium w3-hide-small w3-hide-medium">Jingyan Li</p>
+		<p class="w3-small w3-hide-small w3-hide-large">Jingyan Li</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">Jingyan Li</p>
+		<p class="w3-medium w3-hide-small w3-hide-medium">jingyankli@gmail.com</p>
+		<p class="w3-small w3-hide-small w3-hide-large">jingyankli@gmail.com</p>
+		<p class="w3-tiny w3-hide-large w3-hide-medium">jingyankli@gmail.com</p>
+	</div>
+</div>
+
+<footer class="w3-container footer w3-hide-small w3-hide-medium">
+	<p>&copy Cogito Apparel 2017</p>
+	<span class="w3-padding-xxlarge w3-xlarge">
+		<a href="http://www.facebook.com/cogitoapparel" class="w3-hover-text-white" target="_blank"><i class="fa fa-facebook-official"></i></a>
+		<a href="https://www.instagram.com/cogitoapparel/" class="w3-hover-text-white"><i class="fa fa-instagram" target="_blank"></i></a>
+		<a class="typeform-share" href="https://forrestfan.typeform.com/to/AFDoZu" data-mode="1" target="_blank"><i class="fa fa-envelope"></i></a>
+		<script>
+			(function(){
+				var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+				if (!gi.call(d,id)) {
+					js=ce.call(d,'script');
+					js.id=id;js.src=b+'share.js';
+					q=gt.call(d,'script')[0];
+					q.parentNode.insertBefore(js,q)}id=id+'_';
+					if (!gi.call(d,id)) {
+						qs=ce.call(d,'link');
+						qs.rel='stylesheet';
+						qs.id=id;qs.href=b+'share-button.css';
+						s=gt.call(d,'head')[0];
+						s.appendChild(qs,s)
+					}
+				}
+			)()
+		</script>
+	</span>
+</footer>
+<footer class="w3-container footer w3-hide-large">
+	<p>&copy Cogito Apparel 2017</p>
+	<span class="w3-padding-xxlarge w3-xlarge">
+		<a href="http://www.facebook.com/cogitoapparel" class="w3-hover-text-white" target="_blank"><i class="fa fa-facebook-official"></i></a>
+		<a href="https://www.instagram.com/cogitoapparel/" class="w3-hover-text-white"><i class="fa fa-instagram" target="_blank"></i></a>
+		<a class="typeform-share" href="https://forrestfan.typeform.com/to/AFDoZu" data-mode="1" target="_blank"><i class="fa fa-envelope"></i></a>
+		<script>
+			(function(){
+				var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+				if (!gi.call(d,id)) {
+					js=ce.call(d,'script');
+					js.id=id;js.src=b+'share.js';
+					q=gt.call(d,'script')[0];
+					q.parentNode.insertBefore(js,q)}id=id+'_';
+					if (!gi.call(d,id)) {
+						qs=ce.call(d,'link');
+						qs.rel='stylesheet';
+						qs.id=id;qs.href=b+'share-button.css';
+						s=gt.call(d,'head')[0];
+						s.appendChild(qs,s)
+					}
+				}
+			)()
+		</script>
+	</span>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidenav when clicking the menu icon
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+    } else {
+        mySidenav.style.display = 'block';
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+}
+//Accordion
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

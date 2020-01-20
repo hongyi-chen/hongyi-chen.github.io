@@ -1,0 +1,140 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		<meta name='theme-color' content='#5fac60'/>
+		<meta name='description' content='Greenback is a leader in innovation, merging sustainability and fashion into one simplistic wallet. Brought to you by young and passionate entrepreneurs, Greenback strives to challenge the status quo in everything we do.'/>
+		<meta property='og:title' content="Greenback"/>
+  		<meta property='og:description' content="Greenback is a leader in innovation, merging sustainability and fashion into one simplistic wallet. Brought to you by young and passionate entrepreneurs, Greenback strives to challenge the status quo in everything we do."/>
+  		<meta property='og:url' content="https://hongyi-chen.github.io/greenback/"/>
+  		<meta property="og:image" content="img/team.jpg"/>
+		<link rel='stylesheet' href='css/w3.css'/>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'/>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400'/>
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.6/css/all.css'/>
+		<link rel='stylesheet' href='css/styles.css'/>
+		<link rel='icon' href='img/logo.png'/>
+		<title>Greenback</title>
+	</head>
+	<body onload="myFunction()">
+		<div id="loader" class="w3-display-middle"></div>
+		<div id="mainContent" style="display: none" class="w3-animate-opacity">
+		<div class="w3-display-container w3-top navbar w3-card w3-white" id="myNavbar">
+			<div class="w3-hide-small">
+				<div class="w3-left">
+					<a class="logo" href="index.html"><strong>green</strong>back</a>
+				</div>
+				<div class="w3-right">
+					<a class="navLink" href="about.html">about</a>
+					<a class="navLink" href="wallet.html">wallet</a>
+					<a class="navLink" href="contact.html">contact</a>
+				</div>
+			</div>
+			<div class="w3-hide-large w3-hide-medium w3-display-container" style="height:20px">
+				<div class="w3-display-left">
+					<a class="menu" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></i></a>
+				</div>
+				<div class="w3-display-middle">
+					<a class="logo" href="index.html"><strong>green</strong>back</a>
+				</div>
+			</div>
+		</div>
+		<div id="sidenav" class="sidenav w3-card-4">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html" class="sidenavbtn" onclick="closeNav()">home</a>
+			<a href="about.html" class="sidenavbtn" onclick="closeNav()">about</a>
+			<a href="wallet.html" class="sidenavbtn" onclick="closeNav()">wallet</a>
+			<a href="contact.html" class="sidenavbtn" onclick="closeNav()">contact</a>
+		</div>
+		<div class="landing" onclick="closeNav()" style="margin-top: 30px">
+			<div class="w3-col l7 m6 s12 tableParent">
+				<div class="tableChild landingText w3-animate-opacity">
+					<h2 class="header1" style="margin-bottom: 15px">revolutionize your wallet.</h2>
+					<br>
+					<a class="CTA CTAText" href="#homeAbout">LEARN MORE</a>
+				</div>
+			</div>
+			<div class="w3-col l5 m6 s12 tableParent">
+				<div class="tableChild">
+					<img src="img/wallet1.png" class="landingPic w3-animate-bottom w3-animate-opacity"/>
+				</div>
+			</div>
+		</div>
+		<div id="homeAbout" class="w3-padding-64 section w3-center" onclick="closeNav()">
+			<h1 class="header2 w3-padding-16">refuse to be ordinary.</h1>
+			<p class="text">At Greenback, we bridge the gap between sustainability and versatility, allowing you to support the environment without sacrificing your own needs. We push the boundaries of what is possible to create a better future for all of us. Join us and help take youth entrepreneurship and the way you use money to the next level.</p>
+			<br>
+			<a class="CTA CTAText" href="about.html">ABOUT US</a>
+		</div>
+		<hr>
+		<div class="w3-padding-32 w3-padding-bottom section w3-center" onclick="closeNav()">
+			<h1 class="header2">simplistic. hand-made. essential.</h1>
+			<p class="text">Convenience is the essence of Greenback, and it's the core of what our wallet is built around. With four card slots, a cash pocket, and a virtual business card all on the back of your phone, normal wallets just can't compare.</p>
+			<br>
+			<div class="w3-col l3 m3 s6 w3-row-padding w3-padding-small">
+				<img src="img/wallet3.jpg" width="100%"/>
+			</div>
+			<div class="w3-col l3 m3 s6 w3-row-padding w3-padding-small">
+				<img src="img/wallet2.jpg" width="100%"/>
+			</div>
+			<div class="w3-col l3 m3 s6 w3-row-padding w3-padding-small">
+				<img src="img/wallet4.jpg" width="100%"/>
+			</div>
+			<div class="w3-col l3 m3 s6 w3-row-padding w3-padding-small">
+				<img src="img/wallet5.jpg" width="100%"/>
+			</div>
+			<div class="clearfix"></div>
+			<br><br>
+			<a class="CTA CTAText" href="wallet.html">LEARN MORE</a>
+			<br><br>
+		</div>
+		<div class="footer w3-padding-32 w3-center" onclick="closeNav()">
+			<div>
+				<a class="SMLinks" href="https://www.facebook.com/greenbackco"><i class="fab fa-facebook-f"></i></a>
+				<a class="SMLinks" href="https://www.instagram.com/greenback.co/"><i class="fab fa-instagram"></i></a>
+			</div>
+			<br><br>
+			<div>
+				<p class="text">&copy Greenback 2018</p>
+			</div>
+		</div>
+	</div>
+		<!--SMOOTH SCROLLING-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+				window.location.hash = hash;
+			  });
+			}
+		  });
+		});
+
+		function openNav() {
+		    document.getElementById("sidenav").style.width = "250px";
+		}
+									
+		function closeNav() {
+		    document.getElementById("sidenav").style.width = "0";
+		}
+
+		var myVar;
+
+		function myFunction() {
+		    myVar = setTimeout(showPage, 1000);
+		}
+
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("mainContent").style.display = "block";
+		}
+		</script>
+	</body>
+</html>

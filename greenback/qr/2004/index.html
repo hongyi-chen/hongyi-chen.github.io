@@ -1,0 +1,130 @@
+<!doctype html5>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		<meta name='theme-color' content='#5fac60'/>
+		<link rel='stylesheet' href='../../css/w3.css'/>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'/>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400'/>
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.6/css/all.css'/>
+		<link rel='stylesheet' href='../../css/styles.css'/>
+		<link rel='icon' href='../../img/logo.png'/>
+<title>Nicholas Giardini</title>	</head>
+	<body onload="myFunction()">
+		<div id="loader" class="w3-display-middle"></div>
+		<div id="mainContent" style="display: none" class="w3-animate-opacity">
+		<div class="w3-display-container w3-top navbar w3-card w3-white" id="myNavbar">
+			<div class="w3-hide-small">
+				<div class="w3-left">
+					<a class="logo" href="../../index.html"><strong>green</strong>back</a>
+				</div>
+				<div class="w3-right">
+					<a class="navLink" href="../../about.html">about</a>
+					<a class="navLink" href="../../wallet.html">wallet</a>
+					<a class="navLink" href="../../contact.html">contact</a>
+				</div>
+			</div>
+			<div class="w3-hide-large w3-hide-medium w3-display-container" style="height:20px">
+				<div class="w3-display-left">
+					<a class="menu" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></i></a>
+				</div>
+				<div class="w3-display-middle">
+					<a class="logo" href="../../index.html"><strong>green</strong>back</a>
+				</div>
+			</div>
+		</div>
+		<div id="sidenav" class="sidenav w3-card-4">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="../../index.html" class="sidenavbtn" onclick="closeNav()">home</a>
+			<a href="../../about.html" class="sidenavbtn" onclick="closeNav()">about</a>
+			<a href="../../wallet.html" class="sidenavbtn" onclick="closeNav()">wallet</a>
+			<a href="../../contact.html" class="sidenavbtn" onclick="closeNav()">contact</a>
+		</div>
+		<div class="w3-center" style="background: #5fac60; padding: 100px 0px 30px 0px" onclick="closeNav()">
+<h1 class="header2" style="color: #ffffff">Nicholas Giardini</h1>		</div>
+		<div class="w3-padding-32 section">
+<div class="w3-col l4 m6 s12 w3-center w3-padding-32">
+				<a class="qrlink" href="mailto:npgiardini@gmail.com">
+					<i class="fas fa-at qricon"></i><br>
+					<p class="text">npgiardini@gmail.com</p>
+				</a>
+			</div><div class="w3-col l4 m6 s12 w3-center w3-padding-32">
+				<a class="qrlink" href="https://www.facebook.com/ngiardini">
+					<i class="fab fa-facebook-square qricon"></i><br>
+					<p class="text">Nicholas Giardini</p>
+				</a>
+			</div><div class="w3-col l4 m6 s12 w3-center w3-padding-32">
+				<a class="qrlink" href="https://www.linkedin.com/in/nicholas-giardini-67849411a">
+					<i class="fab fa-linkedin qricon"></i><br>
+					<p class="text">Nicholas Giardini</p>
+				</a>
+			</div><div class="w3-col l4 m6 s12 w3-center w3-padding-32">
+				<a class="qrlink" href="https://instagram.com/niqthecricket">
+					<i class="fab fa-instagram qricon"></i><br>
+					<p class="text">@niqthecricket</p>
+				</a>
+			</div><div class="w3-col l4 m6 s12 w3-center w3-padding-32">
+				<a class="qrlink" href="https://twitter.com/npgiardini">
+					<i class="fab fa-twitter-square qricon"></i><br>
+					<p class="text">@npgiardini</p>
+				</a>
+			</div><div class="w3-col l4 m6 s12 w3-center w3-padding-32">
+				<a class="qrlink" href="javascript:void(0)">
+					<i class="fab fa-snapchat-square qricon"></i><br>
+					<p class="text">npgiardini</p>
+				</a>
+			</div>			<div class="clearfix"></div>
+			<div class="w3-center w3-margin-top">
+				<a href="../../index.html" class="text qrlink" style="text-decoration: underline">Get Your Own</a>
+			</div>
+		</div>
+		<div class="footer w3-padding-32 w3-center" onclick="closeNav()">
+			<div>
+				<a class="SMLinks" href="https://www.facebook.com/greenbackco"><i class="fab fa-facebook-f"></i></a>
+				<a class="SMLinks" href="https://www.instagram.com/greenback.co/"><i class="fab fa-instagram"></i></a>
+			</div>
+			<br><br>
+			<div>
+				<p class="text">&copy Greenback 2018</p>
+			</div>
+		</div>
+	</div>
+		<!--SMOOTH SCROLLING-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+				window.location.hash = hash;
+			  });
+			}
+		  });
+		});
+
+		function openNav() {
+		    document.getElementById("sidenav").style.width = "250px";
+		}
+									
+		function closeNav() {
+		    document.getElementById("sidenav").style.width = "0";
+		}
+
+		var myVar;
+
+		function myFunction() {
+		    myVar = setTimeout(showPage, 1000);
+		}
+
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("mainContent").style.display = "block";
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,410 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+hr {
+	border: 1px solid #ccc;
+	margin: 0 5%;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+	width: 6px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	background-clip: padding-box;
+	border-radius: 50px;
+	background-color: #5fac60;
+}
+
+@media (min-width: 1200px) {
+	.header1 {
+		font-family: Nunito;
+		font-weight: bold;
+		font-size: 55px;
+	}
+	.header2 {
+		font-family: Nunito;
+		font-weight: bold;
+		font-size: 35px;
+		color: #5fac60;
+	}
+	.text{
+		font-family: Josefin Sans;
+		font-weight: 300;
+		font-size: 22px;
+	}
+	.subtext {
+		font-family: Josefin Sans;
+		font-weight: 300;
+		font-size: 20px;
+	}
+	.quote {
+		font-family: Josefin Sans;
+		font-weight: bold;
+		font-size: 45px;
+	}
+	.CTAText {
+		font-family: Josefin Sans;
+		font-weight: 400;
+		font-size: 18px;
+		letter-spacing: 0.8px;
+	}
+	.landingText {
+		padding-left: 100px;
+	}
+	.bannerText {
+		font-family: Josefin Sans;
+		font-weight: bold;
+		font-size: 40px;
+	}
+}
+@media (min-width: 500px) and (max-width: 1199px) {
+	.header1 {
+		font-family: Nunito;
+		font-weight: bold;
+		font-size: 45px;
+	}
+	.header2 {
+		font-family: Nunito;
+		font-weight: bold;
+		font-size: 32px;
+		color: #5fac60;
+	}
+	.quote {
+		font-family: Josefin Sans;
+		font-weight: bold;
+		font-size: 35px;
+	}
+	.text{
+		font-family: Josefin Sans;
+		font-weight: 300;
+		font-size: 20px;
+	}
+	.subtext {
+		font-family: Josefin Sans;
+		font-weight: 300;
+		font-size: 18px;
+	}
+	.CTAText {
+		font-family: Josefin Sans;
+		font-weight: 400;
+		font-size: 17px;
+		letter-spacing: 0.8px;
+	}
+	.landingText {
+		padding-left: 75px;
+	}
+	.bannerText {
+		font-family: Josefin Sans;
+		font-weight: bold;
+		font-size: 30px;
+	}
+}
+@media (max-width: 499px) {
+	.header1 {
+		font-family: Nunito;
+		font-weight: bold;
+		font-size: 35px;
+	}
+	.header2 {
+		font-family: Nunito;
+		font-weight: bold;
+		font-size: 28px;
+		color: #5fac60;
+	}
+	.text{
+		font-family: Josefin Sans;
+		font-weight: 300;
+		font-size: 18px;
+	}
+	.subtext {
+		font-family: Josefin Sans;
+		font-weight: 300;
+		font-size: 16px;
+	}
+	.quote {
+		font-family: Josefin Sans;
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.CTAText {
+		font-family: Josefin Sans;
+		font-weight: 400;
+		font-size: 17px;
+		letter-spacing: 0.8px;
+	}
+	.landingText {
+		padding:0px 50px;
+	}
+	.bannerText {
+		font-family: Josefin Sans;
+		font-weight: bold;
+		font-size: 25px;
+	}
+}
+
+#loader {
+  z-index: 1;
+  width: 110px;
+  height: 110px;
+  margin: -55px 0px 0px -55px;
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #5fac60;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.navbar {
+	padding: 20px 30px;
+	position: fixed
+}
+
+.navbar a{
+	text-decoration: none;
+	transition: all 0.3s ease;
+	font-size: 20px;
+}
+
+.navbar a:hover:not(.logo) {
+	color: #5fac60;
+	cursor: pointer;
+}
+
+.logo {
+	font-family: Nunito;
+	font-size: 20px;
+	margin: 0px;
+	color: #5fac60;
+}
+
+.navLink {
+	font-family: Nunito;
+	font-size: 20px;
+	margin: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #5fac60;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.sidenavbtn {
+    padding: 12px 8px 8px 40px;
+    text-decoration: none;
+    font-family: Nunito;
+    font-size: 23px;
+    color: #fff;
+    display: block;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-family: Nunito;
+    color: #fff;
+}
+
+
+.landing {
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/landingBack.png');
+	min-height: 100%;
+}
+
+.tradeshowLanding {
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/tradeshowBack.jpg');
+	min-height: 100%;
+}
+
+.landingPic {
+	width: 70%;
+}
+
+.banner {
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/bannerAbout.jpg');
+	min-height: 40%;
+	color: #ffffff;
+}
+
+.corkBanner {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url('../img/cork.jpg');
+	min-height: 70%;
+	color: #ffffff;
+	transition: all 0.7s ease;
+}
+.clipBanner {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url('../img/clipback.jpg');
+	min-height: 70%;
+	color: #ffffff;
+	transition: all 0.7s ease;
+}
+.cardBanner {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url('../img/card.jpg');
+	min-height: 70%;
+	color: #ffffff;
+	transition: all 0.7s ease;
+}
+.pocketBanner {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url('../img/pocket.jpg');
+	min-height: 70%;
+	color: #ffffff;
+	transition: all 0.7s ease;
+}
+
+.CTA {
+	background: #5fac60;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px 30px;
+	border-radius: 50px;
+	border: none;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+}
+
+.CTA:hover {
+	background: #518751;
+	cursor: pointer;
+}
+
+.landingPic {
+	display: block;
+	margin: 0 auto;
+}
+
+.section {
+	margin: 0 8%;
+}
+
+.footer {
+	background: #5fac60;
+	color: #ffffff;
+	padding-top: 64px!important;
+}
+
+.SMLinks {
+	font-size: 20px;
+	padding: 10px;
+}
+
+.formWrap form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.formWrap fieldset {
+    border: none;
+}
+.formWrap label {
+    display: block;
+    padding: 8px 0px;
+}
+.formWrap input:not(.CTA) {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+.formWrap input:not(.CTA):focus {
+    outline: none;
+    border-bottom: 1px solid #5fac60;
+}
+.formWrap textarea {
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+.formWrap textarea:focus {
+	outline: none;
+	border: 1px solid #5fac60;
+}
+
+.quantitySelection {
+	font-family: Josefin Sans;
+}
+
+.qricon {
+	font-size: 60px;
+	padding-bottom: 10px;
+}
+
+.qrlink {
+	color: #000000;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.qrlink:hover {
+	color: #5fac60;
+	cursor: pointer;
+}
+
+.tableParent {
+	display: table;
+	height: 100%;
+}
+
+.tableChild {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.clearfix {
+   clear: both;
+}
