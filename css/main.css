@@ -141,6 +141,19 @@ h1, .h1 {
     letter-spacing: -.1rem;
 }
 
+highlight {
+	background-image: linear-gradient(#56bfda, #56bfda);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 0% 50%;
+}
+
+highlight:hover{
+  background-size: 100% 100%;
+  background-position: 0px 50px;
+  transition: background-size .4s ease-in .1s;
+}
+
 @media only screen and (max-width: 600px) {
     h1, .h1 {
         font-size: 3.3rem;
@@ -2209,8 +2222,23 @@ html.no-csstransitions .home-content__main {
 .about-desc {
     font-size: 2.2rem;
     line-height: 1.6;
-    text-align: justify;
+    text-align: left;
     max-width: 78%;
+    padding-bottom: 100px;
+}
+
+emphasis{
+    font-weight: bold;
+}
+
+.emphasis-link{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.emphasis-link:hover{
+    color: #555555;
 }
 
 /* -------------------------------------------------------------------
@@ -2351,6 +2379,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 400px) {
     .about-desc {
         font-size: 1.8rem;
+        padding-bottom: 75px;
     }
     .stats__count {
         font-size: 7.8rem;
