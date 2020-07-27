@@ -7,7 +7,7 @@
   --spacing-super-tight: 10px;
   --light: #FFFFFF;
   --dark: #202020;
-  --title-size: 96px;
+  --title-size: 48px;
   --body-size: 18px;
 }
 
@@ -84,7 +84,7 @@ p {
 }
 
 h1 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: var(--title-size);
   padding-top: var(--spacing-tight);
   padding-bottom: var(--spacing-tighter);
@@ -110,7 +110,7 @@ span {
 	background-image: linear-gradient(#ffd900, #ffd900);
 	background-repeat: no-repeat;
 	background-position: 0px 10px;
-	background-size: 100% 0px;
+	background-size: 100% 100%;
 }
 
 span-left {
@@ -278,6 +278,11 @@ resume:hover{
 .middle{
   justify-content: center;
   display: flex;
+}
+
+.dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 /* .hexagon{
